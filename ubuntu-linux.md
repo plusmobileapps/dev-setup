@@ -3,12 +3,13 @@
 ## Applications
 
 * [Android Studio](https://developer.android.com/studio/install#linux) - IDE for Android Development
+    * If emulator does not work, open up Ubuntu Software Center -> Software & Updates -> Additional Drivers -> use the propriertary drivers for your card
 * [VS Code](https://code.visualstudio.com/docs/?dv=linux64_deb) - text editor from Microsoft
   * `git config --global core.editor "code --wait"` - to configure git as the default editor
 * [GitKraken](https://www.gitkraken.com/) - Git GUI client for better git diff visualization
 * [Kazam](https://launchpad.net/kazam) - Simple Video capture and screenshot tool
 * [OBS](https://obsproject.com/wiki/install-instructions#linux) - more advanced video capture tool
-* [VLC Media Player](https://www.videolan.org/vlc/index.html)
+* [VLC Media Player](https://www.videolan.org/vlc/index.html) - the media player that can open any type of media file
 
 ## Terminal tools
 
