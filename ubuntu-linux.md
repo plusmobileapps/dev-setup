@@ -70,12 +70,12 @@ fi
 Below are some helpful aliases when I am developing. 
 
 ```bash
-#launch vs code to edit bash profile and aliases
-alias edit_profile='code ~/.bashrc'
+#launch vs code to edit bash profile and aliases using oh my zsh
+alias edit_profile='code ~/.zshrc'
 alias edit_aliases='code ~/.bash_aliases'
 
 # source bash profile
-alias source_profile='source ~/.bashrc'
+alias source_profile='source ~/.zshrc'
 
 # copy the text to the clipboard. Usage: 
 # cat some_file.txt | c 
