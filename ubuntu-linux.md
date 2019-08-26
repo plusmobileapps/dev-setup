@@ -1,5 +1,16 @@
 # Ubuntu Developer Setup
 
+## Installation 
+
+[Official Installation Guide](https://help.ubuntu.com/lts/installation-guide/amd64/index.html)
+
+[Stack Overflow Answer for manual ubuntu formatting installation with screenshots](https://askubuntu.com/a/343352)
+
+* Note about installation if developing with an android emulator, be sure to not select install 3rd party software during installation and just go vanilla. 
+
+[How to install nvidia graphics drivers through software center](https://www.cyberciti.biz/faq/ubuntu-linux-install-nvidia-driver-latest-proprietary-driver/)
+
+
 ## Applications
 
 * [Android Studio](https://developer.android.com/studio/install#linux) - IDE for Android Development
