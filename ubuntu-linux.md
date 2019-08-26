@@ -14,7 +14,7 @@
 ## Applications
 
 * [Android Studio](https://developer.android.com/studio/install#linux) - IDE for Android Development
-    * If emulator does not work, open up Ubuntu Software Center -> Software & Updates -> Additional Drivers -> use the propriertary drivers for your card
+    * If emulator does not work follow - [stackOverflow answer for troubleshooting kvm emulator error](https://stackoverflow.com/a/57653090/7900721)
 * [VS Code](https://code.visualstudio.com/docs/?dv=linux64_deb) - text editor from Microsoft
   * `git config --global core.editor "code --wait"` - to configure git as the default editor
 * [GitKraken](https://www.gitkraken.com/) - Git GUI client for better git diff visualization
@@ -50,4 +50,35 @@ Now you can finally test that the new configuration of npm was setup correctly b
 npm install -g polymer-cli
 ```
 
+### Bash Profile
+
+[Oh My Zsh - github](https://github.com/robbyrussell/oh-my-zsh)
+
+[Medium Zshell and theming article](https://medium.com/wearetheledger/oh-my-zsh-made-for-cli-lovers-installation-guide-3131ca5491fb)
+
+
+
+To keep the `.bashrc` file clean of many aliases, you can check if there is a filename lets say `.bash_aliases` file and load in that file. 
+
+```bash
+//inside .bashrc
+if [ -f ~/.bash_aliases ]; then
+    . ~/.bash_aliases
+fi
+```
+
+Below are some helpful aliases when I am developing. 
+
+```bash
+#launch vs code to edit bash profile and aliases
+alias edit_profile='code ~/.bashrc'
+alias edit_aliases='code ~/.bash_aliases'
+
+# source bash profile
+alias source_profile='source ~/.bashrc'
+
+# copy the text to the clipboard. Usage: 
+# cat some_file.txt | c 
+alias c='xclip -selection clipboard' 
+```
 
