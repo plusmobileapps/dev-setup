@@ -10,10 +10,31 @@
 [iTerm2](https://www.iterm2.com/) - terminal replacement
 
 [Oh My ZShell](https://github.com/robbyrussell/oh-my-zsh) - customize the terminal
+* I use the `agnoster` theme. To change open up `~/.zshrc` file and change the following line 
+
+```bash
+ZSH_THEME="agnoster"
+```
+
+* If the theme is not rendering properly in iTerm, then install [Powerline fonts](https://github.com/powerline/fonts). Copy/paste the following to install. Then in iTerm preferences, check the option to `Use a differnt font for non-ASCII text` and switch the font to `Mesio LG L for powerline`. [Screen shot](https://github.com/ohmyzsh/ohmyzsh/issues/1906#issuecomment-252443982)
+
+```bash
+# clone
+git clone https://github.com/powerline/fonts.git --depth=1
+# install
+cd fonts
+./install.sh
+# clean-up a bit
+cd ..
+rm -rf fonts
+```
+
+
 
 ## Downloadable Applications
 
-[Sublime](https://www.sublimetext.com/3) - text editor
+[Visual Studio Code](https://code.visualstudio.com/) - text editor
+* to open files from the command line follow these [instructions](https://code.visualstudio.com/docs/setup/mac)
 
 [Sourcetree](https://www.sourcetreeapp.com/) - version control GUI for Git repositories
 
@@ -30,7 +51,7 @@
 Since I use [Oh My ZShell](https://github.com/robbyrussell/oh-my-zsh), my bash profile is sourced from `.zshrc` file in my home directory as opposed to `.bash_profile`. My bash profile consists of a bunch of git aliases and helper functions for dealing with the Android SDK. 
 
 ```bash
-alias edit_profile='sublime ~/.zshrc'
+alias edit_profile='code ~/.zshrc'
 alias source_profile='source ~/.zshrc'
 
 # Open Sublime text editor
